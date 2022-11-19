@@ -22,8 +22,12 @@ spring:
       hibernate.default_batch_fetch_size: 100
 #    database: mysql
 #    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-  h2.console.enabled: true
   sql.init.mode: always
+  data.rest:
+  data:
+    rest:
+      base-path: /api
+      detection-strategy: annotated
 
 ---
 spring:
